@@ -61,7 +61,7 @@ The increased popularity of the internet has made it more accessible for people 
 In 2017, 80 percent of Danes have used online shopping in the last year [1]. When it only was 59 percent back in 2008. \\
 The growth in package delivery are sure to continue and the need for optimization are also increasing. The leading delivery companies have a large and complex logistic challenge that is constantly evolving. \\
 There have been a shift over the last three years on how the customers want to have their packages delivered. 2017 was the first year where "collect yourself" is more popular than delivering to your home address [2]. There are multiple factors that could have impacted this change. Most prominently the introduction of a new kind of pick-up points called "pakke-bokse" that makes it easier for the customers to collect their packages. \\
-rekutteringscenteret@post.dk
+
 
 [1] https://www.danskerhverv.dk/contentassets/c9177ce791854aac95f4307bb8206539/e-handlen-anno-2017---forbrugertrends-og-tendenser?fbclid=IwAR2C0zgiiCFRW59r5x05L4mENJYSlzX3XAsI6DxPSJeCBcSrd2EyaGTcc9Q
 
@@ -85,7 +85,7 @@ These age groups have different preferences in the delivery methods. Young peopl
 
 
 \subsection{Satisfaction and returning customers}
-FDIH made a study on what factors is important for returning customers in correlation to online shopping. The four factors in this study is credibility, relevance, responsiveness and convenience. Package delivery is part of responsiveness and convenience which the study shows are the most prominent factors [2]. If the customer is not satisfied with the delivery time/methods would it often result in them using a different company, next time they shop online.
+FDIH made a study on what factors is important for returning customers in correlation to online shopping. The four factors in this study is credibility, relevance, responsiveness and convenience. Package delivery is part of responsiveness and convenience which the study shows are the most prominent factors [2]. If the customer is not satisfied with the delivery time/methods would it often result in them using a different online shop, next time they shop online. So companies that have online shops have a huge interest in optimizing the package delivery to satisfy their customers which result in returning customers. This means that both online-shopping companies and the end customer would benefit from optimization in package delivery.
 
 
 
@@ -111,7 +111,7 @@ Post Nord has a system called 'Modtagerflex' which allows them to put your packa
 \section{Algorithm}
 \subsection{The Travelling Salesman Problem}
 The package delivery problem is basically a variation of the travelling sales man problem. The travelling salesman problem evolves around a salesman, who have to visit n number of cities, and then return home to his own town. The best solution to for his route is therefore a Hamiltonian route where he only visits every city once before he travels home to the starting point. \\ \\
-The travelling salesman problem is a well known problem in computer science and especially graph theory.  
+The travelling salesman problem is a well known problem in computer science and especially graph theory. As it is a multigraph where there usually are at least to ways to get to the next city. And therefore there will be at least two edges to every vertice. This is also the issue in the delivery problem, as there in most cases will be more than one way to reach each address. In the delivery problem version of the travelling salesman problem will be the route where the delivery truck does not have to visit or cross a street more than once.    
 
 
 \subsection{Bees algorithm}
