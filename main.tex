@@ -1,0 +1,128 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+\linespread{1.50}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+
+%%% Bibliography
+\usepackage[numbers]{natbib}
+\usepackage{url}
+\usepackage{hyperref}
+
+%%% Grafik
+\usepackage{epstopdf}
+\usepackage{graphicx}
+\usepackage{float}
+
+%%% math
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[amssymb]{SIunits}
+\usepackage{units}
+%%% Kode
+\usepackage{listings}
+
+%%% TABLES
+\usepackage{tabularx}
+\usepackage{booktabs}
+
+%%% Farve formaterring 
+\usepackage{color}
+
+%%% Dokument miljø 
+
+\title{Package delivery}
+\author{Group A325}
+\date{October-December 2018}
+
+\begin{document}
+
+\maketitle
+\chapter{Introduction}
+With the increasing 
+
+
+\chapter{Problem analysis}
+(Intro to problem analysis)
+
+\section{Why is this a relevant problem?}
+
+\subsection{The big increase in online shopping}
+The increased popularity of the internet has made it more accessible for people to order packages from all over the world. In 2017, a total of 176 million online trades where made which is an increase of 9 percent compared to 2016. 77 percent of these trades was physical products that in some way needed shipping.[2] \\
+In 2017, 80 percent of Danes have used online shopping in the last year [1]. When it only was 59 percent back in 2008. \\
+The growth in package delivery are sure to continue and the need for optimization are also increasing. The leading delivery companies have a large and complex logistic challenge that is constantly evolving. \\
+There have been a shift over the last three years on how the customers want to have their packages delivered. 2017 was the first year where "collect yourself" is more popular than delivering to your home address [2]. There are multiple factors that could have impacted this change. Most prominently the introduction of a new kind of pick-up points called "pakke-bokse" that makes it easier for the customers to collect their packages. \\
+rekutteringscenteret@post.dk
+
+[1] https://www.danskerhverv.dk/contentassets/c9177ce791854aac95f4307bb8206539/e-handlen-anno-2017---forbrugertrends-og-tendenser?fbclid=IwAR2C0zgiiCFRW59r5x05L4mENJYSlzX3XAsI6DxPSJeCBcSrd2EyaGTcc9Q
+
+[2] FDIH årsrapport.
+
+\subsection{Last Mile Delivery }
+Draft //
+Last mile is the final step of the delivery process
+
+
+
+\subsection{Which groups of people use online shopping the most? and what are the most optimized solutions for the groups of people that use it the most.}
+We have already established that online shopping is getting bigger every year. But what are the age groups and who uses online shopping the most. \\
+Statistic show that in Denmark 82 percent of young people between 16 and 19 have used online shopping in the last 3 month in 2018. While the age groups 20 - 39 and 40 - 59 years lays at 79\% and 78\% respectively [3]. Only 55 percent of elders between 60 - 74 years have used online shopping in last three months. This may seem like a small percentage compared to the others. But this age group have increased more than any other age group. In 2008 the percentage was only at 18 percent which means an increase at 37 percent in the last 10 years [4]. \\
+These numbers do not show much difference between age 16 to 59 although it shows that younger people tend to use online shopping more often. \\
+These age groups have different preferences in the delivery methods. Young people tend to wanna use the pick-up yourself concept while elders want the package delivered to their home address [2]. \\
+
+[3] http://www.statistikbanken.dk/BEBRIT07
+
+[4] https://www.dst.dk/da/Statistik/nyt/NytHtml?cid=31386
+
+
+\subsection{Satisfaction and returning customers}
+FDIH made a study on what factors is important for returning customers in correlation to online shopping. The four factors in this study is credibility, relevance, responsiveness and convenience. Package delivery is part of responsiveness and convenience which the study shows are the most prominent factors [2]. If the customer is not satisfied with the delivery time/methods would it often result in them using a different company, next time they shop online.
+
+
+
+
+
+\section{Current state of package delivery}
+\subsection{Top delivery companies and their methods}
+
+
+\subsection{Post Nord}
+Draft //
+
+Post Nord has a system called 'Modtagerflex' which allows them to put your package delivery wherever you have chosen to. Post Nord has a list of places that they are able to put it e.g. in your greenhouse, garage or shed. With Modtagerflex you do not need to be home at the time of delivery. They will simply just place your package and send you a message that your package has been placed in your chosen location.
+
+
+\subsection{GLS}
+
+
+\subsection{The economy}
+
+
+
+\section{Algorithm}
+\subsection{The Travelling Salesman Problem}
+The package delivery problem is basically a variation of the travelling sales man problem. The travelling salesman problem evolves around a salesman, who have to visit n number of cities, and then return home to his own town. The best solution to for his route is therefore a Hamiltonian route where he only visits every city once before he travels home to the starting point. \\ \\
+The travelling salesman problem is a well known problem in computer science and especially graph theory.  
+
+
+\subsection{Bees algorithm}
+Bees algorithm is inspired by the way bees delegate their different food sources between them. It is used by the routeplanning firm Routific, where they use it to help calculate the best routes for their customers. It is primarily used if theres a whole fleet of trucks which needs to be assigned to different delivery zones in an area.    
+\subsection{Genetic algorithm}
+The idea behind genetic algorithm comes from Charles Darwin's theory of evolution and is based on the survival of the fittest principal. The algorithm therefore uses that the strongest element in the generation gets to be the father for the next generation. To solve the problem of package delivery you start with a generation of random routes. Each of the routes gets assigned a fitness value depending on how close it is to the goal that is the best route/shortest route. The route with the best score gets to be the father of the next generation of routes. This selection keeps happening until the best route have been discovered or made. Or at least until the fitness score gets balanced and does not improve further in the next generations.
+
+
+
+
+\chapter{Problemformulering}
+
+
+\end{document} 
