@@ -48,13 +48,13 @@
 
 \maketitle
 \chapter{Introduction}
-With the increasing 
-
+Input wack introduction here. 
+(introduction skal være meget overordnet og lede frem til vores initierende problem. Pas på ikke at gentage for meget af hvad jeg har skrevet i "The big increase.." - Simon)
 
 \chapter{Problem analysis}
 (Intro to problem analysis)
 
-\section{Why is this a relevant problem?}
+\section{Is this a relevant problem?}
 
 \subsection{The big increase in online shopping}
 The increased popularity of the internet has made it more accessible for people to order packages from all over the world. In 2017, a total of 176 million online trades where made which is an increase of 9 percent compared to 2016. 77 percent of these trades was physical products that in some way needed shipping.[2] \\
@@ -75,7 +75,7 @@ Last mile is the final step of the delivery process
 
 \subsection{Which groups of people use online shopping the most? and what are the most optimized solutions for the groups of people that use it the most.}
 We have already established that online shopping is getting bigger every year. But what are the age groups and who uses online shopping the most. \\
-Statistic show that in Denmark 82 percent of young people between 16 and 19 have used online shopping in the last 3 month in 2018. While the age groups 20 - 39 and 40 - 59 years lays at 79\% and 78\% respectively [3]. Only 55 percent of elders between 60 - 74 years have used online shopping in last three months. This may seem like a small percentage compared to the others. But this age group have increased more than any other age group. In 2008 the percentage was only at 18 percent which means an increase at 37 percent in the last 10 years [4]. \\
+Statistic show that, in Denmark, 82 percent of young people between 16 and 19 have used online shopping in the last 3 month in 2018. While the age groups 20 - 39 and 40 - 59 years lays at 79\% and 78\% respectively [3]. Only 55 percent of elders between 60 - 74 years have used online shopping in last three months. This may seem like a small percentage compared to the others. But this age group have increased more than any other age group. In 2008 the percentage was only at 18 percent which means an increase at 37 percent in the last 10 years [4]. \\
 These numbers do not show much difference between age 16 to 59 although it shows that younger people tend to use online shopping more often. \\
 These age groups have different preferences in the delivery methods. Young people tend to wanna use the pick-up yourself concept while elders want the package delivered to their home address [2]. \\
 
@@ -85,23 +85,26 @@ These age groups have different preferences in the delivery methods. Young peopl
 
 
 \subsection{Satisfaction and returning customers}
-FDIH made a study on what factors is important for returning customers in correlation to online shopping. The four factors in this study is credibility, relevance, responsiveness and convenience. Package delivery is part of responsiveness and convenience which the study shows are the most prominent factors [2]. If the customer is not satisfied with the delivery time/methods would it often result in them using a different online shop, next time they shop online. So companies that have online shops have a huge interest in optimizing the package delivery to satisfy their customers which result in returning customers. This means that both online-shopping companies and the end customer would benefit from optimization in package delivery.
+FDIH made a study on what factors is important for returning customers in correlation to online shopping. The four factors in this study is credibility, relevance, responsiveness and convenience. These factors are weighted as a way to compare importance in correlation to the customer return rate. The weight of each factors are based on survey that was answered by more than 14 thousand customers. \\
+Package delivery is part of responsiveness and convenience which the study shows are the most prominent factors [2]. If the customer is not satisfied with the delivery time/methods it would often result in them using a different online shop next time they shop online. So companies that have online shops have a huge interest in optimizing the package delivery to satisfy their customers which result in returning customers. This means that both online-shopping companies and the end customer would benefit from optimization in package delivery.
 
+\subsection{Interim conclusion}
 
 
 
 
 \section{Current state of package delivery}
 \subsection{Top delivery companies and their methods}
+The danish package distribution is being handled by a lot of different companies with some being more popular than others. PostNord and GLS are by far the most known and used companies. A research involving 2323 private persons, 506 companies and 212 public institutions showed that 90 percent mentioned PostNord when asked to mention post distributors in Denmark. GLS is mentioned by 69 percent of the test people while lesser known distributors as DHL Express and UPS is mentioned by roughly one quarter of the people in the test[1]. \\
+Receiving mail is an everyday phenomenon. Getting packages delivered to either a home address or a parcel box on a weekly basis is getting more common. In the test mentioned earlier, one in four people receive packages ordered online up to three times a month and around two thirds receives one or more packages every quarter of the year. How these people choose to get their packages delivered varies depending on their place of residence. People living in bigger cities shows a tendency to receive packages more frequently than ruralites. Getting packages delivered to home addresses is still the most used method by city residents and ruralites. Most cities offers other alternatives such as parcels boxes, which stores the package for you to pick up, while rural areas are reliant on home deliveries, unless they want to travel to nearest parcel box or pick up point[1]. \\
+Parcel boxes are increasing in popularity and usage have risen 10 percent from 2015 to 2018 while delivery to home addresses have fallen 7 percent in the same time period. Elderly people above the age of 65 is more frequent to use home delivery while the younger age groups and families with children are more frequent users of the parcels boxes and pick up points[2]. \\
+
+[1]: https://www.trm.dk/~/media/files/publication/2015/pakketjenester-aug-15/rapport--danskernes-brug-af-pakketjenester--juni-2015-final.pdf
+
+[2]: FDIH årsrapport.
 
 
-\subsection{Post Nord}
-Draft //
 
-Post Nord has a system called 'Modtagerflex' which allows them to put your package delivery wherever you have chosen to. Post Nord has a list of places that they are able to put it e.g. in your greenhouse, garage or shed. With Modtagerflex you do not need to be home at the time of delivery. They will simply just place your package and send you a message that your package has been placed in your chosen location.
-
-
-\subsection{GLS}
 
 
 \subsection{The economy}
@@ -109,16 +112,22 @@ Post Nord has a system called 'Modtagerflex' which allows them to put your packa
 
 
 \section{Algorithm}
+There are many opportunities for finding an route between n number of cities. To find the optimal route it becomes a well known mathematical problem called The Travelling Salesman Problem. This problem has no direct solution that can be solved in a time that is acceptable or possible. Therefor there have come multiple ways to come the closest to the route which is the best optimized. The different solutions finds different routes, therefor they should be used in different situations.
+
 \subsection{The Travelling Salesman Problem}
 The package delivery problem is basically a variation of the travelling sales man problem. The travelling salesman problem evolves around a salesman, who have to visit n number of cities, and then return home to his own town. The best solution to for his route is therefore a Hamiltonian route where he only visits every city once before he travels home to the starting point. \\ \\
 The travelling salesman problem is a well known problem in computer science and especially graph theory. As it is a multigraph where there usually are at least to ways to get to the next city. And therefore there will be at least two edges to every vertice. This is also the issue in the delivery problem, as there in most cases will be more than one way to reach each address. In the delivery problem version of the travelling salesman problem will be the route where the delivery truck does not have to visit or cross a street more than once.    
 
 
 \subsection{Bees algorithm}
-Bees algorithm is inspired by the way bees delegate their different food sources between them. It is used by the routeplanning firm Routific, where they use it to help calculate the best routes for their customers. It is primarily used if theres a whole fleet of trucks which needs to be assigned to different delivery zones in an area.    
+Bees algorithm is inspired by the way bees delegate their different food sources between them. It is used by the routeplanning firm Routific, where they use it to help calculate the best routes for their customers. It is primarily used if theres a whole fleet of trucks which needs to be assigned to different delivery zones in an area.   
+
+
 \subsection{Genetic algorithm}
 The idea behind genetic algorithm comes from Charles Darwin's theory of evolution and is based on the survival of the fittest principal. The algorithm therefore uses that the strongest element in the generation gets to be the father for the next generation. To solve the problem of package delivery you start with a generation of random routes. Each of the routes gets assigned a fitness value depending on how close it is to the goal that is the best route/shortest route. The route with the best score gets to be the father of the next generation of routes. This selection keeps happening until the best route have been discovered or made. Or at least until the fitness score gets balanced and does not improve further in the next generations.
 
+\subsection{Greedy algorithm}
+There is no known algorithm that solves TSP fast enough. Therefor there have surfaced algorithms to make the best possible solution in a certain amount of time. The greedy algorithm is one, it always takes the nearest city which has not been visited, this creates the most direct route between the cities, this creates the best solution locally and expects the result on a larger scale to be close to the optimized solution. While this outcome is a faster route than a random picked route, it is not in all cases the most optimized route. 
 
 
 
